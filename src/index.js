@@ -178,6 +178,10 @@ const llms = () => `# x402-tools MCP server (agent-audit + page-read)
 - MCP client config: {"mcpServers": {"x402-tools": {"url": "https://mcp.agent-audit.workers.dev/mcp"}}}
 - curl: curl -s https://mcp.agent-audit.workers.dev/mcp -H 'content-type: application/json' -H 'accept: application/json, text/event-stream' -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
 
+## Source
+
+MIT source: https://github.com/agent-audit-x402/x402-tools-mcp
+
 ## Operator
 
 Operated by the GitHub account agent-audit-x402 (https://github.com/agent-audit-x402), the shared official account for agent-audit and page-read; contact parafield-dev@mail.grokbot.com. Same operator and payee as https://agent-audit.agent-audit.workers.dev and https://page-read.agent-audit.workers.dev.
