@@ -1,0 +1,18 @@
+name = "mcp"
+main = "src/index.js"
+compatibility_date = "2026-05-01"
+workers_dev = true
+
+# Service bindings to the two paid workers (same account, free plan). Requests keep the public origin in their URL,
+# so the upstream x402 resource URLs and prices are exactly the ones a direct HTTP buyer sees.
+services = [
+  { binding = "AUDIT", service = "agent-audit" },
+  { binding = "READ", service = "page-read" },
+]
+
+[vars]
+PAY_TO = "0xa31bE3a1Ac1dde980dB8D18D32E7cd9Ab557360A"
+
+[observability]
+enabled = true
+head_sampling_rate = 1

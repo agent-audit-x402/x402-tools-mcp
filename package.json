@@ -1,0 +1,15 @@
+{
+  "name": "x402-tools-mcp",
+  "version": "0.1.1",
+  "private": true,
+  "description": "Remote MCP server (Cloudflare Workers) for the agent-audit and page-read x402 APIs: pay-per-call USDC on Base, no signup.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.86.0"
+  }
+}
